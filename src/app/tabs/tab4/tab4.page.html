@@ -13,6 +13,6 @@
     <ion-item>
       <ion-label>{{mensaje}}</ion-label>
     </ion-item>
-    <ion-button (click)="jugarOtravez()" shape="round" fill="solid">Quieres volver a jugar</ion-button>
+    <ion-button *ngIf="reiniciar" (click)="jugarOtravez()" shape="round" fill="solid">Quieres volver a jugar</ion-button>
   </ion-list>
 </ion-content>
