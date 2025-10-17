@@ -1,13 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Tab 5</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header-tab titulo="Página 5"></app-header-tab>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 5</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list *ngFor="let v of valoresLista" lines="inset" class="ion-margin-vertical">
+    <ion-item [href]="v.url">
+      <ion-img [src]="v.imagen"/>
+    </ion-item>
+  </ion-list>
 </ion-content>

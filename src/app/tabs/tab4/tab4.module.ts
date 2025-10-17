@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Tab4PageRoutingModule } from './tab4-routing.module';
 
 import { Tab4Page } from './tab4.page';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
+import { ComponentesModule } from 'src/app/shared/componentes/componentes-module';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { ExploreContainerComponentModule } from '../../explore-container/explore
     FormsModule,
     IonicModule,
     Tab4PageRoutingModule,
-    ExploreContainerComponentModule
+    ComponentesModule
   ],
   declarations: [Tab4Page]
 })
